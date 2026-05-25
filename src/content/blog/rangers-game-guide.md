@@ -3,7 +3,7 @@ title: "First Timer's Guide to a Texas Rangers Game"
 description: "Globe Life Field is one of the best ballparks in the country. Here's everything you need to know to have an amazing time at your first Rangers game."
 date: 2025-04-20
 category: "Entertainment"
-coverImage: "/images/baseball-stadium.jpg"
+coverImage: "/images/inline-rangers-field.jpg"
 ---
 
 I have been to a lot of baseball stadiums, and Globe Life Field genuinely ranks among the very best. It opened in 2020 (right as the world was shutting down — rough timing), but getting to experience it with a full crowd now is just *chef's kiss*. If you haven't been, this is the year.
@@ -20,7 +20,7 @@ I have been to a lot of baseball stadiums, and Globe Life Field genuinely ranks 
 - **Best experience:** The Delta SKY360° Club is worth a splurge at least once. All-inclusive food and drinks, incredible sightlines, air-conditioned. Absolute luxury.
 - **App:** Download the Texas Rangers app before you go — mobile tickets and express lanes make entry a breeze.
 
-![Packed baseball stadium crowd cheering at a night game](/images/inline-baseball-crowd.jpg)
+![Rangers fans cheering with hands raised at a packed Globe Life Field](/images/inline-rangers-crowd.jpg)
 *A packed Globe Life Field on a warm Texas night — there's nothing quite like it.*
 
 ## What to Eat
@@ -32,7 +32,7 @@ The food at Globe Life is genuinely good. Some highlights:
 - **Churro dog** — a dessert churro in a sugar cone with ice cream. Absurd and wonderful.
 - **Local craft beer section** — solid selection of Texas breweries on tap
 
-![Stadium concession food — hot dogs, nachos, and drinks](/images/inline-baseball-food.jpg)
+![A Texas-style chili dog on a tray — classic ballpark food](/images/inline-bbq-dog.jpg)
 *You WILL be getting a Texas Brisket Dog. This is not optional.*
 
 ## Pro Tips
