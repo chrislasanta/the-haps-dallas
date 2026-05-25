@@ -12,6 +12,9 @@ Real talk: the Dallas Arts District is one of the most underrated things about l
 
 Free general admission, every single day. That alone should have you heading downtown. The permanent collection is excellent — strong on American art, European masters, and a fantastic decorative arts section. But the special exhibitions are where it gets exciting; they've been bringing in some truly world-class shows recently.
 
+![Museum gallery with a visitor admiring a large painting](/images/inline-museum-gallery.jpg)
+*Free general admission means you can wander in anytime — no planning required.*
+
 - **Address:** 1717 N Harwood St
 - **Hours:** Tue–Sun 11am–5pm, Thu until 9pm
 - **Cost:** Free general admission; special exhibitions vary
@@ -27,6 +30,9 @@ Okay, the Nasher is genuinely one of my favorite places in all of Dallas. The in
 ## Perot Museum of Nature and Science
 
 This one is more "wow" than "contemplative." The building itself is stunning (it looks like a giant cube hovering over the street), and inside it's genuinely thrilling — especially the energy hall and the dinosaur exhibits. If you have kids, this is a must. If you don't have kids, it's still a must.
+
+![Visitors exploring an interactive science museum exhibit](/images/inline-science-museum.jpg)
+*The Perot Museum has that rare quality: genuinely exciting for every single age group.*
 
 - **Address:** 2201 N Field St
 - **Hours:** Mon–Sat 10am–5pm, Sun 11am–5pm

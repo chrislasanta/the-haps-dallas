@@ -19,6 +19,9 @@ The park packs a lot into its 5.2 acres:
 - **Free fitness classes** on Saturday and Sunday mornings
 - **The Savor restaurant** if you want to sit down for a proper meal
 
+![Food trucks serving a crowd in an urban park setting](/images/inline-food-trucks.jpg)
+*The food truck row at Klyde Warren is basically a daily food festival.*
+
 ## Free Programming
 
 This is the part people sleep on. Klyde Warren has a packed calendar of free events year-round:
@@ -36,6 +39,9 @@ Honestly, any time works — but here's my breakdown:
 - **Sunday morning:** Fitness class, then a leisurely lap around the park with a coffee from the truck. Peak Dallas living.
 - **Weekend evenings in spring/fall:** The energy is unmatched. Live music, great weather, everyone's in a good mood.
 - **Summer midday:** Not my first choice — it gets HOT. Go early or late.
+
+![Urban green space with trail and city skyline in background](/images/inline-park-greenspace.jpg)
+*That view of the Dallas skyline from the park never gets old.*
 
 ## Getting There
 

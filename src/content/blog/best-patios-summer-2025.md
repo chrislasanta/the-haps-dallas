@@ -13,6 +13,9 @@ Okay, I know what you're thinking — "Amy, it's *hot*. Why are we eating outsid
 
 If you've never been to HG Sply Co., we need to talk. Their rooftop is one of the best spots in the city — grab a frozen rosé, look out over Lower Greenville, and pretend your life is a magazine shoot. The food is great too (the grain bowls are legitimately fantastic), but honestly the vibe is the main event.
 
+![Rooftop bar with city views and string lights](/images/inline-rooftop-bar.jpg)
+*A rooftop like this hits different with a frozen rosé in hand.*
+
 - **Address:** 2008 Greenville Ave, Dallas
 - **Hours:** Mon–Thu 11am–10pm, Fri–Sat 11am–11pm, Sun 10am–10pm
 - **Pro tip:** Go right when they open on weekdays to snag the best patio seats.
@@ -20,6 +23,9 @@ If you've never been to HG Sply Co., we need to talk. Their rooftop is one of th
 ## Truck Yard (Lower Greenville)
 
 Speaking of Greenville Ave — Truck Yard is basically a party in an outdoor lot and I mean that in the best possible way. Food trucks, string lights, a treehouse bar, and dogs everywhere. It's chaotic and delightful. Just be prepared: the line for the treehouse bar can get long on weekend nights.
+
+![Food trucks lined up at an outdoor venue](/images/inline-food-trucks.jpg)
+*The food truck lineup at Truck Yard rotates, but the vibes are always 10/10.*
 
 - **Address:** 5624 Sears St, Dallas
 - **Cost:** Free to enter, pay as you go
@@ -34,6 +40,9 @@ This one is a Dallas classic and for good reason. Right along the Katy Trail, yo
 ## Boulevardier (Uptown)
 
 For something a little more romantic and low-key, Boulevardier's side patio on Cole Avenue is a gem. Excellent French food, killer cocktails, and it somehow always feels like you have a secret spot even when it's packed.
+
+![Cozy outdoor bar seating at dusk](/images/inline-outdoor-bar.jpg)
+*The kind of patio you discover and immediately want to keep secret.*
 
 ---
 

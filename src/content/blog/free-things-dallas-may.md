@@ -12,6 +12,9 @@ One of the things I love most about Dallas is that you absolutely do not need to
 
 Rent a kayak or just walk/run/bike the 9-mile trail around the lake. It's beautiful, it's free, and it genuinely feels like you've left the city. The bath house has a small café if you need a snack.
 
+![Peaceful lake with walking trail and trees](/images/inline-white-rock-lake.jpg)
+*White Rock Lake feels like a secret escape hidden right inside the city.*
+
 ## 2. Klyde Warren Park Free Fitness
 
 Saturday and Sunday mornings, free yoga and fitness classes on the Great Lawn. No registration needed, just show up. Mats recommended but not required.
@@ -27,6 +30,9 @@ Just walking around Bishop Arts is genuinely fun. Window shopping, street art, g
 ## 5. Katy Trail
 
 Five miles of paved trail connecting Uptown to Highland Park. Great for walking, running, or biking. There's something really alive about it on weekend mornings.
+
+![Tree-lined urban trail with joggers and cyclists](/images/inline-katy-trail.jpg)
+*Katy Trail on a Sunday morning is peak Dallas — bring your walking shoes and your best playlist.*
 
 ## 6. Dallas Farmers Market (Saturday)
 

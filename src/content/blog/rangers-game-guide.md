@@ -20,6 +20,9 @@ I have been to a lot of baseball stadiums, and Globe Life Field genuinely ranks 
 - **Best experience:** The Delta SKY360° Club is worth a splurge at least once. All-inclusive food and drinks, incredible sightlines, air-conditioned. Absolute luxury.
 - **App:** Download the Texas Rangers app before you go — mobile tickets and express lanes make entry a breeze.
 
+![Packed baseball stadium crowd cheering at a night game](/images/inline-baseball-crowd.jpg)
+*A packed Globe Life Field on a warm Texas night — there's nothing quite like it.*
+
 ## What to Eat
 
 The food at Globe Life is genuinely good. Some highlights:
@@ -28,6 +31,9 @@ The food at Globe Life is genuinely good. Some highlights:
 - **Lockhart Smokehouse** — real legit BBQ inside a baseball stadium. Texas, baby.
 - **Churro dog** — a dessert churro in a sugar cone with ice cream. Absurd and wonderful.
 - **Local craft beer section** — solid selection of Texas breweries on tap
+
+![Stadium concession food — hot dogs, nachos, and drinks](/images/inline-baseball-food.jpg)
+*You WILL be getting a Texas Brisket Dog. This is not optional.*
 
 ## Pro Tips
 

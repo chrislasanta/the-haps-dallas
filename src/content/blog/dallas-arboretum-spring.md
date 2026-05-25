@@ -12,6 +12,9 @@ Every spring, I make at least two trips to the Dallas Arboretum and I never regr
 
 The annual Dallas Blooms celebration runs February through April and is the largest floral festival in the Southwest. We're talking 100,000+ bulbs blooming across the 66 acres of gardens along White Rock Lake.
 
+![Visitors walking a winding path through a lush botanical garden in bloom](/images/inline-garden-path.jpg)
+*Walking through the Arboretum in spring genuinely feels like stepping inside a painting.*
+
 ## Practical Info
 
 - **Address:** 8525 Garland Rd, Dallas, TX 75218
@@ -28,6 +31,9 @@ The annual Dallas Blooms celebration runs February through April and is the larg
 **Rory Meyers Children's Adventure Garden** — 8 acres just for kids with 150+ interactive exhibits. My niece could spend an entire day in here.
 
 **The DEW Terrace on White Rock Lake** — grab a snack here and just take in the view. On a clear day it's postcard-perfect.
+
+![Families exploring outdoor garden grounds on a sunny day](/images/inline-garden-visitors.jpg)
+*The Rory Meyers Children's Adventure Garden is 8 acres of pure kid magic.*
 
 ## Tips for Visiting with Kids
 
