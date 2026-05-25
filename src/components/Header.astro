@@ -1,0 +1,49 @@
+---
+const navLinks = [
+  { href: '/', label: '🏠 Home' },
+  { href: '/blog', label: '📝 All Posts' },
+  { href: '/about', label: '💖 About' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header style="background: linear-gradient(135deg, #FF4B8A 0%, #C471ED 50%, #FF4B8A 100%); background-size: 200% 200%;" class="shadow-lg">
+  <!-- sparkle strip -->
+  <div class="text-center text-sm py-1 bg-white/20 tracking-widest font-semibold text-white">
+    ✨&nbsp;&nbsp;your weekly dallas guide&nbsp;&nbsp;✨
+  </div>
+
+  <div class="max-w-5xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+    <!-- logo -->
+    <a href="/" class="text-center group">
+      <div class="text-3xl sm:text-4xl text-white drop-shadow-md" style="font-family: var(--font-family-display); text-shadow: 2px 2px 0px rgba(0,0,0,0.15);">
+        The Haps Dallas
+      </div>
+      <div class="text-white/80 text-xs mt-1 font-semibold tracking-wide">
+        💕 best things to do in dallas, every week 💕
+      </div>
+    </a>
+
+    <!-- nav -->
+    <nav>
+      <ul class="flex gap-2">
+        {navLinks.map(link => (
+          <li>
+            <a
+              href={link.href}
+              class:list={[
+                'px-3 py-1.5 rounded-full text-sm font-bold transition-all',
+                currentPath === link.href
+                  ? 'bg-white text-[var(--color-pink-hot)] shadow-md scale-105'
+                  : 'bg-white/20 text-white hover:bg-white/40'
+              ]}
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>

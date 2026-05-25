@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="About" description="Meet Amy — the Dallasite behind The Haps Dallas blog.">
+  <Header />
+
+  <main class="flex-1 max-w-2xl mx-auto px-4 py-14 w-full">
+
+    <!-- Profile card -->
+    <div class="text-center mb-10">
+      <div
+        class="w-24 h-24 rounded-full flex items-center justify-center text-white text-4xl font-extrabold mx-auto mb-4 shadow-lg"
+        style="background: linear-gradient(135deg, var(--color-pink-hot), var(--color-purple)); font-family: var(--font-family-display);"
+      >
+        A
+      </div>
+      <h1 class="text-4xl font-extrabold mb-1" style="font-family: var(--font-family-display); color: var(--color-purple-dark);">
+        hi, i'm Amy! 👋
+      </h1>
+      <p class="font-extrabold text-sm" style="color: var(--color-pink-hot);">✨ lifelong Dallasite & total DFW enthusiast ✨</p>
+    </div>
+
+    <div class="bg-white rounded-3xl p-8 shadow-md border-2 border-pink-100 prose max-w-none" style="color: var(--color-dark);">
+      <p>
+        I've lived in Dallas my whole life, and I <em>still</em> get genuinely excited about discovering something new here.
+        There's so much going on in this city <strong>all of the time</strong> — great restaurants opening, events happening
+        every weekend, parks and trails and museums that deserve way more love than they get.
+      </p>
+
+      <p>
+        I started The Haps Dallas because I kept telling friends and family about things to do and places to try,
+        and eventually it just made sense to write it all down in one place. My goal is simple: help you get off
+        your couch and actually experience the amazing city we live in. You're welcome. 😄
+      </p>
+
+      <h2>what you'll find here 💕</h2>
+
+      <ul>
+        <li><strong>Dining picks</strong> — new spots, old favorites, hidden gems</li>
+        <li><strong>Weekend activities</strong> — because "I don't know, what do you want to do?" is not an answer</li>
+        <li><strong>Outdoor adventures</strong> — parks, trails, lakes, and all the DFW outdoors</li>
+        <li><strong>Arts & culture</strong> — the Dallas Arts District is world-class and we should all use it more!</li>
+        <li><strong>Free & cheap finds</strong> — having a great time doesn't require spending a lot of money</li>
+        <li><strong>Family-friendly picks</strong> — things to do with kids that adults also actually enjoy</li>
+      </ul>
+
+      <h2>a few of my faves 🌸</h2>
+
+      <ul>
+        <li><strong>Hopdoddy's Burger Bar</strong> — my forever go-to burger spot</li>
+        <li><strong>Klyde Warren Park</strong> — a perfect afternoon every single time</li>
+        <li><strong>Nasher Sculpture Center</strong> — one of the most beautiful places in the city</li>
+        <li><strong>Dallas Arboretum in spring</strong> — never gets old, I could go every year</li>
+        <li><strong>Rangers game at Globe Life Field</strong> — world-class ballpark experience</li>
+        <li><strong>Katy Trail on a Sunday morning</strong> — the classic Dallas move</li>
+      </ul>
+
+      <p>
+        Dallas has so much to offer. Let's explore it together! 💖
+      </p>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

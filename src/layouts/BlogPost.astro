@@ -1,0 +1,95 @@
+---
+import Layout from './Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  date: Date;
+  category: string;
+  coverImage?: string;
+}
+
+const { title, description, date, category, coverImage } = Astro.props;
+
+const formattedDate = date.toLocaleDateString('en-US', {
+  weekday: 'long', month: 'long', day: 'numeric', year: 'numeric',
+});
+
+const categoryStyles: Record<string, { bg: string; text: string; emoji: string }> = {
+  'Dining':         { bg: '#FFD6E7', text: '#C2185B', emoji: '🍽️' },
+  'Outdoors':       { bg: '#C8F7C5', text: '#1B5E20', emoji: '🌸' },
+  'Arts & Culture': { bg: '#E8D5F5', text: '#6A1B9A', emoji: '🎨' },
+  'Entertainment':  { bg: '#FFE0B2', text: '#E65100', emoji: '🎉' },
+  'Family':         { bg: '#BBDEFB', text: '#1565C0', emoji: '👨‍👩‍👧' },
+  'Free & Cheap':   { bg: '#FFF9C4', text: '#F57F17', emoji: '💸' },
+};
+
+const style = categoryStyles[category] ?? { bg: '#F3E5F5', text: '#4A148C', emoji: '✨' };
+---
+
+<Layout title={title} description={description}>
+  <Header />
+
+  <main class="flex-1">
+    {coverImage && (
+      <div class="w-full max-h-[420px] overflow-hidden">
+        <img src={coverImage} alt={title} class="w-full object-cover" />
+      </div>
+    )}
+
+    <div class="max-w-2xl mx-auto px-4 py-10">
+      <div class="mb-5">
+        <a href="/blog" class="inline-flex items-center gap-1 text-sm font-extrabold hover:underline" style="color: var(--color-pink-hot);">
+          ← back to all posts
+        </a>
+      </div>
+
+      <!-- category + date -->
+      <div class="flex items-center gap-3 mb-4 flex-wrap">
+        <span
+          class="text-xs font-extrabold px-3 py-1 rounded-full"
+          style={`background: ${style.bg}; color: ${style.text};`}
+        >
+          {style.emoji} {category}
+        </span>
+        <time class="text-xs font-semibold" style="color: var(--color-coral);">📅 {formattedDate}</time>
+      </div>
+
+      <!-- title -->
+      <h1
+        class="text-3xl sm:text-4xl font-extrabold leading-tight mb-4"
+        style="font-family: var(--font-family-heading); color: var(--color-purple-dark);"
+      >
+        {title}
+      </h1>
+
+      <!-- deck -->
+      <p class="text-base leading-relaxed mb-8 font-semibold pb-8 border-b-2 border-dashed border-pink-200" style="color: #7B2D8B;">
+        {description}
+      </p>
+
+      <!-- body -->
+      <div class="prose max-w-none" style="color: var(--color-dark);">
+        <slot />
+      </div>
+
+      <!-- author card -->
+      <div class="mt-12 pt-8 border-t-2 border-dashed border-pink-200 flex items-center gap-4">
+        <div
+          class="w-14 h-14 rounded-full flex items-center justify-center text-white text-xl font-extrabold shadow-md shrink-0"
+          style="background: linear-gradient(135deg, var(--color-pink-hot), var(--color-purple)); font-family: var(--font-family-display);"
+        >
+          A
+        </div>
+        <div>
+          <p class="font-extrabold" style="color: var(--color-purple-dark); font-family: var(--font-family-heading);">Amy 💕</p>
+          <p class="text-sm font-semibold" style="color: #9C4A8B;">Lifelong Dallasite & lover of all things DFW ✨</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

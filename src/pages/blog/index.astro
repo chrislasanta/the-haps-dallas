@@ -1,0 +1,78 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import PostCard from '../../components/PostCard.astro';
+
+const allPosts = await getCollection('blog');
+const sorted = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const categories = ['All', 'Dining', 'Outdoors', 'Arts & Culture', 'Entertainment', 'Family', 'Free & Cheap'];
+const categoryEmojis: Record<string, string> = {
+  'All': '✨', 'Dining': '🍽️', 'Outdoors': '🌸', 'Arts & Culture': '🎨',
+  'Entertainment': '🎉', 'Family': '👨‍👩‍👧', 'Free & Cheap': '💸',
+};
+
+const activeCategory = Astro.url.searchParams.get('category') ?? 'All';
+const filtered = activeCategory === 'All'
+  ? sorted
+  : sorted.filter(p => p.data.category === activeCategory);
+---
+
+<Layout title="All Posts" description="Browse every post from The Haps Dallas.">
+  <Header />
+
+  <main class="flex-1 max-w-5xl mx-auto px-4 py-10 w-full">
+
+    <!-- Page header -->
+    <div class="text-center mb-8">
+      <h1 class="text-4xl font-extrabold mb-1" style="font-family: var(--font-family-display); color: var(--color-purple-dark);">
+        all the posts! 📝
+      </h1>
+      <p class="font-semibold" style="color: #9C4A8B;">everything you need to know about what's happening in dallas 💕</p>
+    </div>
+
+    <!-- Category filter -->
+    <div class="flex flex-wrap gap-2 justify-center mb-8">
+      {categories.map(cat => (
+        <a
+          href={cat === 'All' ? '/blog' : `/blog?category=${encodeURIComponent(cat)}`}
+          class:list={[
+            'px-4 py-1.5 rounded-full text-sm font-extrabold transition-all hover:scale-105 border-2',
+            activeCategory === cat
+              ? 'text-white border-transparent shadow-md'
+              : 'bg-white border-pink-200 hover:border-pink-400'
+          ]}
+          style={activeCategory === cat
+            ? 'background: linear-gradient(135deg, var(--color-pink-hot), var(--color-purple)); color: white;'
+            : 'color: var(--color-purple-dark);'}
+        >
+          {categoryEmojis[cat]} {cat}
+        </a>
+      ))}
+    </div>
+
+    {filtered.length === 0 ? (
+      <div class="text-center py-16">
+        <div class="text-5xl mb-4">🌸</div>
+        <p class="font-extrabold" style="color: var(--color-purple-dark);">no posts in this category yet — check back soon!</p>
+      </div>
+    ) : (
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {filtered.map(post => (
+          <PostCard
+            title={post.data.title}
+            slug={post.id}
+            date={post.data.date}
+            description={post.data.description}
+            category={post.data.category}
+            coverImage={post.data.coverImage}
+          />
+        ))}
+      </div>
+    )}
+  </main>
+
+  <Footer />
+</Layout>

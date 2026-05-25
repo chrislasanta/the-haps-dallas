@@ -1,0 +1,89 @@
+---
+interface Props {
+  title: string;
+  slug: string;
+  date: Date;
+  description: string;
+  category: string;
+  coverImage?: string;
+  featured?: boolean;
+}
+
+const { title, slug, date, description, category, coverImage, featured = false } = Astro.props;
+
+const formattedDate = date.toLocaleDateString('en-US', {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+});
+
+const categoryStyles: Record<string, { bg: string; text: string; emoji: string }> = {
+  'Dining':         { bg: '#FFD6E7', text: '#C2185B', emoji: '🍽️' },
+  'Outdoors':       { bg: '#C8F7C5', text: '#1B5E20', emoji: '🌸' },
+  'Arts & Culture': { bg: '#E8D5F5', text: '#6A1B9A', emoji: '🎨' },
+  'Entertainment':  { bg: '#FFE0B2', text: '#E65100', emoji: '🎉' },
+  'Family':         { bg: '#BBDEFB', text: '#1565C0', emoji: '👨‍👩‍👧' },
+  'Free & Cheap':   { bg: '#FFF9C4', text: '#F57F17', emoji: '💸' },
+};
+
+const style = categoryStyles[category] ?? { bg: '#F3E5F5', text: '#4A148C', emoji: '✨' };
+---
+
+<article
+  class:list={[
+    'bg-white rounded-3xl overflow-hidden group transition-all duration-300 hover:-translate-y-1',
+    featured ? 'sm:flex shadow-xl border-2 border-pink-200' : 'shadow-md hover:shadow-xl border-2 border-pink-100 hover:border-pink-300'
+  ]}
+>
+  <!-- image -->
+  <div class:list={['overflow-hidden relative', featured ? 'sm:w-2/5 sm:shrink-0' : 'aspect-[16/9]']}>
+    {coverImage ? (
+      <img
+        src={coverImage}
+        alt={title}
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        loading="lazy"
+      />
+    ) : (
+      <div class="w-full h-full min-h-[180px] flex items-center justify-center text-5xl"
+           style="background: linear-gradient(135deg, #FFD6E7, #E8D5F5);">
+        {style.emoji}
+      </div>
+    )}
+    <!-- category pill overlaid on image -->
+    <div class="absolute top-3 left-3">
+      <span
+        class="text-xs font-extrabold px-3 py-1 rounded-full shadow-sm"
+        style={`background: ${style.bg}; color: ${style.text};`}
+      >
+        {style.emoji} {category}
+      </span>
+    </div>
+  </div>
+
+  <!-- content -->
+  <div class="p-5 flex flex-col justify-between">
+    <div>
+      <time class="text-xs font-semibold" style="color: var(--color-coral);">📅 {formattedDate}</time>
+      <h2
+        class:list={[
+          'font-extrabold leading-tight mt-1 mb-2 group-hover:text-[var(--color-pink-hot)] transition-colors',
+          featured ? 'text-2xl' : 'text-lg',
+        ]}
+        style="font-family: var(--font-family-heading); color: var(--color-dark);"
+      >
+        <a href={`/blog/${slug}`}>{title}</a>
+      </h2>
+      <p class="text-sm leading-relaxed line-clamp-3" style="color: #6B4E71;">{description}</p>
+    </div>
+    <div class="mt-4">
+      <a
+        href={`/blog/${slug}`}
+        class="inline-flex items-center gap-1 text-sm font-extrabold px-4 py-1.5 rounded-full transition-all hover:scale-105 shadow-sm"
+        style="background: linear-gradient(135deg, var(--color-pink-hot), var(--color-purple)); color: white;"
+      >
+        read more 💕
+      </a>
+    </div>
+  </div>
+</article>
